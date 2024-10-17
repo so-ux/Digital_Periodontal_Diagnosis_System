@@ -1,0 +1,42 @@
+
+root_file:
+  cbct_image: '*_image.nii.gz'
+  cbct_mask: '*_label.nii.gz'
+  cbct_bone: '*_bone.nii.gz'
+
+path:
+  cbct: '00_cbct'
+  dental: '00_dental_model'
+  merged: '01_merged'
+  aligned_dental: '02_aligned_dental_model'
+  tooth_axis: '03_tooth_axis'
+  gum_line: '04_gum_line'
+  gum_line_refined: '04_gum_line_refined'
+  gum_line_refined_complemented: '04_gum_line_refined_complemented'
+  tooth_bone_line: '05_tooth_bone_line'
+  bone_line: '06_bone_line'
+  csv: 'csv'
+  bone_line_final: '07_bone_line_final'
+  bone_line_final_1: '07_bone_line_final_short'
+  gum_6: '08_gum_6_sectors'
+  bone_6: '08_bone_6_sectors'
+
+file:
+  cbct_centers: '01_merged/stage0_cbct_centers.json'
+  dental_centers: '01_merged/stage0_dental_model_centers.json'
+  cbct_merged: '01_merged/stage0_merged_cbct.off'
+  dental_merged: '01_merged/stage0_merged_dental_model.off'
+  dental_prealigned: '01_merged/stage1_prealigned_patient_dental_model.off'
+  stage1: '01_merged/stage1_transformation.json'
+  dental_patient_aligned: '01_merged/stage2_aligned_patient_dental_model.off'
+  stage2: '01_merged/stage2_transformation.json'
+  dental_tooth_aligned: '01_merged/stage3_aligned_tooth_dental_model.off'
+  stage3: '01_merged/stage3_transformation.json'
+  transformation: '01_merged/transformation.json'
+
+oral_scan_seg_file:
+  upper_dental_mesh: '*_UpperJawScan.off'
+  upper_dental_label: '*_UpperJawScan_label.txt'
+  lower_dental_mesh: '*_LowerJawScan.off'
+  lower_dental_label: '*_LowerJawScan_label.txt'
+

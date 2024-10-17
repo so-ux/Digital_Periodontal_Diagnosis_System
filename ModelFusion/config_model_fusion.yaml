@@ -1,0 +1,29 @@
+root_file:
+  cbct_image: '*_image.nii.gz'
+  cbct_mask: '*_label.nii.gz'
+
+path:
+  cbct: '00_cbct'
+  dental: '00_dental_model'
+  merged: '01_merged'
+  aligned_dental: '02_aligned_dental_model'
+
+file:
+  cbct_centers: '01_merged/stage0_cbct_centers.json'
+  dental_centers: '01_merged/stage0_dental_model_centers.json'
+  cbct_merged: '01_merged/stage0_merged_cbct.off'
+  dental_merged: '01_merged/stage0_merged_dental_model.off'
+  dental_prealigned: '01_merged/stage1_prealigned_patient_dental_model.off'
+  stage1: '01_merged/stage1_transformation.json'
+  dental_patient_aligned: '01_merged/stage2_aligned_patient_dental_model.off'
+  stage2: '01_merged/stage2_transformation.json'
+  dental_tooth_aligned: '01_merged/stage3_aligned_tooth_dental_model.off'
+  stage3: '01_merged/stage3_transformation.json'
+  transformation: '01_merged/transformation.json'
+
+oral_scan_seg_file:
+  upper_dental_mesh: '*_UpperJawScan.off'
+  upper_dental_label: '*_UpperJawScan_label.txt'
+  lower_dental_mesh: '*_LowerJawScan.off'
+  lower_dental_label: '*_LowerJawScan_label.txt'
+
